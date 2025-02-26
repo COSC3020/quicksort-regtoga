@@ -18,18 +18,16 @@ function quicksort(array) {
 
         let pivot = array[right];
         let i = left - 1;
-        
+
+        //swap elements around the pivot.
         for (let j = left; j < right; j++) {
             if (array[j] < pivot) {
                 i++;
                 [array[i], array[j]] = [array[j], array[i]];
             }
         }
-        //swap around the elements.
-        //console.log("\nbefore");
-        //console.log(array + "stuff: " +array[i + 1] +", "+ array[right]);
+        
         [array[i + 1], array[right]] = [array[right], array[i + 1]];
-        //console.log(array);
 
         let pivotIndex = i + 1;
         //split the array into two subarrays (in practice) at the pivot point
