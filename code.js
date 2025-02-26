@@ -1,4 +1,5 @@
 function quicksort(array) {
+    //if the array is of length 1 or less its allready sorted
     if (array.length <= 1) {
         return array
     };
@@ -31,7 +32,7 @@ function quicksort(array) {
         //console.log(array);
 
         let pivotIndex = i + 1;
-
+        //split the array into two subarrays (in practice) at the pivot point
         if (pivotIndex - 1 > left) {
             stack.push({ left: left, right: pivotIndex - 1 });
         }
@@ -43,5 +44,5 @@ function quicksort(array) {
     return array;
 }
 
-console.log(quicksort([5, 2, 9, 1, 5, 6]));
+//console.log(quicksort([5, 2, 9, 1, 5, 6]));
 //console.log(quicksort([10,9,8,7,6,5,4,3,2,1]));
