@@ -35,7 +35,7 @@ The inner loop is easy to find as it loops over a range (0, n) so it loops n tim
 The outer loop loops n/2 times in the worst case because my pivot is always the right most element,
 this means that we are only reducing the array by 2 each iteration adding up to n/2 times. so asymtopticly n times.
 
-my final worst case runtime is n * n $= \theta(n^2) $
+my final worst case runtime is $T(n) = \frac{n}{2} * n \epsilon \theta(n^2) $
 
 
 I was talking to Gage and he made it sound impossible, so i did one google search: https://www.geeksforgeeks.org/iterative-quick-sort/
